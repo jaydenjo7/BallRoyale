@@ -1,25 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet } from "react-native";
-import TabNavigator from "./TabNav";
+// import React from "react";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { NavigationContainer } from "@react-navigation/native";
+import HomeScreen from "./HomeScreen";
+import CourtFinder from "./CourtFinder";
+const Tab = createBottomTabNavigator();
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <TabNavigator />
-    </View>
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Court Finder" component={CourtFinder} />
+    </Tab.Navigator>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  text: {
-    fontSize: 18,
-    marginBottom: 10,
-  },
-});
 
 export default App;
