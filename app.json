@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "BallRoyale",
+    "slug": "BallRoyale",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
