@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import React from "react";
+import { useState, useEffect } from "react";
 import * as Location from "expo-location";
+import { View, Text, StyleSheet } from "react-native";
 
-const App = () => {
+const CourtFinder = () => {
   const [location, setLocation] = useState(null);
 
   useEffect(() => {
@@ -50,4 +51,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default CourtFinder;
